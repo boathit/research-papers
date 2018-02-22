@@ -36,7 +36,7 @@ Please refer to the code in `experiment/experiment.jl` seeing how to generate th
 $ python t2vec.py -data experiment -vocab_size 18866 -checkpoint "best_model.pt" -mode 2
 ```
 
-It will encode the trajectories in file `experiment/trj.t` into vectors which will be saved into file `experiment/trj.vec`.
+It will encode the trajectories in file `experiment/trj.t` into vectors which will be saved into file `experiment/trj.h5`.
 
 In our experiment we train a three-layers model and the last layer outputs are used as the trajectory representations, see the code in `experiment/experiment.jl`:
 

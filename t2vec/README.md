@@ -1,5 +1,6 @@
+## About
 
-This repository contains the code used in our ICDE-18 paper *Deep Representation Learning for Trajectory Similarity Computation*.
+This repository contains the code used in our *ICDE-18* paper *Deep Representation Learning for Trajectory Similarity Computation*.
 
 
 ## Preprocessing

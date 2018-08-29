@@ -30,7 +30,7 @@ In our original experiment, the model was trained with a Tesla K40 GPU about 14 
 
 ## Embedding
 
-Please refer to the code in `experiment/experiment.jl` seeing how to generate the test file `trj.t` and then run
+Please refer to the code in `experiment/experiment.jl` seeing how to generate the test file `trj.t` (alternatively, you can also create your own `trj.t` by referring the format of sample file in `data/trj.t` in which each row is a token representation of the orginal trajectory) and then run
 
 ```shell
 $ python t2vec.py -data experiment -vocab_size 18866 -checkpoint "best_model.pt" -mode 2

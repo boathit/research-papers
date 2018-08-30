@@ -23,7 +23,7 @@ $ julia preprocess.jl
 $ python t2vec.py -data data -vocab_size 18866 -criterion_name "KLDIV" -knearestvocabs "preprocessing/porto-vocab-dist-cell100.h5"
 ```
 
-The training produces two model `checkpoint.pt` and `best_model.pt`, `checkpoint.pt` contains the latest trained model and `best_model.pt` saves the model which has the best performance on the validation data.
+The training produces two model `checkpoint.pt` and `best_model.pt`, `checkpoint.pt` contains the latest trained model and `best_model.pt` saves the model which has the best performance on the validation data. You can find our saved `best_model.pt` [here](https://drive.google.com/open?id=1uxZUmvFHhpY8tOXvCDHuEd7KFOTYp109).
 
 In our original experiment, the model was trained with a Tesla K40 GPU about 14 hours so you can just terminate the training after 14 hours if you use a GPU that is as good as or better than K40, the above two models will be saved automatically.
 
@@ -48,4 +48,4 @@ end
 
 ## Miscellaneous
 
-The code was written in Julia 0.5 and PyTorch 0.1.12 along with Python 3.6, and since then both Julia and PyTorch have evolved rapidly to a higher version which may bring some breaking changes, hence the code here only serves as an illustrating examples of our original prototype.
+The code was written in Julia 0.5 and PyTorch 0.1.12 along with Python 3.5, and since then both Julia and PyTorch have evolved rapidly to a higher version which may bring some breaking changes, hence the code here only serves as an illustrating examples of our original prototype.
